@@ -24,20 +24,23 @@ header {
 /*General títulos*/
 
 h1 {
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 30px;
+    font-size: 1.875rem;
     font-style: italic;
+    margin-bottom: 1.875rem;
+}
+
+.titulo-con-barra {
     position: relative;
     display: inline-block;
-    margin-bottom: 30px;
 }
 
 /* Pseudoelemento */
 
-h2::after {
+.titulo-con-barra::after {
     content: '';
     position: absolute;
     width: 50px;
@@ -49,9 +52,40 @@ h2::after {
 
 
 h3 {
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
+
+
+/*BOTONES UNIFICADOS*/
+
+.btn-aire {
+    display: inline-block;
+    padding: 12px 25px;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1rem;
+    text-align: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: 2px solid black;
+}
+
+.btn-aire-negro {
+    background-color: black;
+    color: white;
+}
+
+.btn-aire-blanco {
+    background-color: white;
+    color: black;
+}
+
+.btn-aire:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
 
 
 /* Links sin subrayar */
@@ -91,14 +125,14 @@ ul {
 }
 
 .hero-text h1 {
-    font-size: 48px;
+    font-size: 3rem;
     font-weight: 800;
     line-height: 1.1;
     margin-bottom: 20px;
 }
 
 .hero-text p {
-    font-size: 18px;
+    font-size: 1.125rem;
     color: #555;
     margin-bottom: 30px;
     line-height: 1.5;
@@ -117,29 +151,6 @@ ul {
 .hero-buttons {
     display: flex;
     gap: 15px;
-}
-
-.boton-negro,
-.boton-blanco {
-    display: inline-block;
-    padding: 15px 30px;
-    font-weight: bold;
-    border-radius: 5px;
-    font-size: 14px;
-    letter-spacing: 1px;
-    transition: transform 0.2s;
-}
-
-.boton-negro {
-    background-color: black;
-    color: white;
-    border: 2px solid black;
-}
-
-.boton-blanco {
-    background-color: white;
-    color: black;
-    border: 2px solid black;
 }
 
 @media (max-width: 991px) {
@@ -200,7 +211,7 @@ ul {
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: bold;
     outline: none;
     width: 100%;
@@ -298,21 +309,7 @@ footer h3 {
     height: auto;
 }
 
-.boton-negro-cards {
-    background-color: black;
-    border: solid 1px black;
-    color: white;
-    font-size: 16px;
-    font-weight: bold;
-}
 
-.boton-blanco-cards {
-    background-color: white;
-    border: solid 1px black;
-    color: black;
-    font-size: 16px;
-    font-weight: bold;
-}
 
 /* Suscripcion Ofertas */
 
@@ -322,14 +319,6 @@ footer h3 {
 
 }
 
-.btn-suscribirme {
-    background-color: white;
-    border: solid 1px white;
-    color: black;
-    font-size: 20px;
-    font-weight: bold;
-
-}
 
 
 
@@ -416,18 +405,6 @@ footer h3 {
     font-size: 14px;
     color: #555;
 }
-
-/*  Boton */
-.card-contenido .boton-negro {
-    margin-top: auto;
-    align-self: start;
-}
-
-
-
-
-
-
 
 
 
