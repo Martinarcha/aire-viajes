@@ -9,11 +9,16 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: black;
-    padding-top: 63px;
     margin: 0;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1020;
 }
 
 /*General títulos*/
@@ -30,7 +35,7 @@ h2 {
     margin-bottom: 30px;
 }
 
-/* Preudoelemento */
+/* Pseudoelemento */
 
 h2::after {
     content: '';
