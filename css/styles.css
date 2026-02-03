@@ -163,7 +163,6 @@ ul {
 
 .seccion-buscador-aire {
     padding: 20px;
-    margin-top: -60px;
     position: relative;
     z-index: 10;
     display: flex;
