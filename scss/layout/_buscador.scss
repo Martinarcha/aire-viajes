@@ -1,0 +1,89 @@
+@use '../abstracts/variables';
+
+.seccion-buscador-aire {
+    max-width: 1000px;
+    margin: -50px auto 80px;
+    position: relative;
+    z-index: 10;
+    padding: 0 20px;
+}
+
+.form-aire {
+    background-color: variables.$color-secundario;
+    padding: 30px;
+    border-radius: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.1);
+    gap: 20px;
+
+    .input-aire-group {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        padding: 0 20px;
+        border-right: 1px solid #eee;
+
+        &:last-of-type {
+            border-right: none;
+        }
+
+        label {
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: variables.$color-primario; // Corregido el acceso a la variable
+            margin-bottom: 5px;
+            text-transform: uppercase;
+        }
+
+        input {
+            border: none;
+            outline: none;
+            font-size: 1rem;
+            font-weight: 500;
+            width: 100%;
+            background: transparent;
+        }
+    }
+
+    .btn-aire-buscar {
+        background-color: variables.$color-primario;
+        color: variables.$color-secundario;
+        border: none;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-weight: 600;
+        cursor: pointer;
+        transition: transform 0.3s ease;
+
+        &:hover {
+            transform: scale(1.05);
+            background-color: variables.$color-texto; // Un ligero cambio de tono al hover
+        }
+    }
+}
+
+// Media Query integrado para Responsividad
+@media (max-width: 768px) {
+    .form-aire {
+        flex-direction: column;
+        border-radius: 20px;
+        margin-top: 20px;
+        
+        .input-aire-group {
+            border-right: none;
+            border-bottom: 1px solid #eee;
+            width: 100%;
+            padding: 10px 0;
+
+            &:last-of-type {
+                border-bottom: none;
+            }
+        }
+        
+        .btn-aire-buscar {
+            width: 100%;
+        }
+    }
+}

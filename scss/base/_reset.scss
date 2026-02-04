@@ -1,0 +1,22 @@
+@use '../abstracts/variables'; 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: variables.$fuente-principal; 
+    background-color: variables.$color-fondo;
+    color: variables.$color-primario; 
+    line-height: 1.6;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}

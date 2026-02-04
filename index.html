@@ -8,44 +8,29 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
 
     <header>
-
-        <nav class="navbar navbar-expand-lg bg-white border-bottom">
-
+        <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
             <div class="container-fluid px-5">
-
                 <a class="navbar-brand fw-bold fs-3" href="index.html">@AireViajes</a>
-
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
-                    aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
-
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
                     <span class="navbar-toggler-icon"></span>
-
                 </button>
-
                 <div class="collapse navbar-collapse" id="menuNavegacion">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 text-center">
-
-                        <li class="nav-item">
-                            <a class="nav-link text-dark fw-medium" href="index.html">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary fw-medium" href="./pages/servicios.html">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary fw-medium" href="./pages/ofertas.html">Ofertas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary fw-medium" href="./pages/acerca-de.html">Acerca De</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-secondary fw-medium" href="./pages/contacto.html">Contacto</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium"
+                                href="pages/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium"
+                                href="pages/ofertas.html">Ofertas</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="pages/acerca-de.html">Acerca
+                                De</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium"
+                                href="pages/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
@@ -57,7 +42,7 @@
     <main>
 
         <section class="hero">
-            <div class="hero-container">
+            <div class="container hero-container">
                 <div class="hero-text">
                     <h1>Tu espacio de experiencias únicas</h1>
                     <p>Diseñamos viajes a medida priorizando tu comodidad. Desde vuelos ejecutivos hasta excursiones
@@ -70,7 +55,7 @@
                 </div>
 
 
-                
+
                 <div class="hero-visual">
                     <div id="carruselViajes" class="carousel slide carousel-dark" data-bs-ride="carousel">
                         <div class="carousel-inner">
@@ -125,45 +110,32 @@
 
         </section>
 
+<section class="categorias-aire">
+    <div class="container">
+        <h2>Descubrí nuestras categorías</h2>
+        <p class="subtitle">Nuestra tecnología escanea miles de opciones para darte la mejor experiencia.</p>
+        
+        <div class="categorias-grid">
+            <article class="categoria-card">
+                <i class="icon-vuelos"></i>
+                <h3>Vuelos</h3>
+                <p>Encontrá pasajes con opciones de cambio sin cargo. Comparamos aerolíneas low-cost y premium.</p>
+            </article>
 
-        <section class="container my-5 text-center">
+            <article class="categoria-card">
+                <i class="icon-paquetes"></i>
+                <h3>Paquetes</h3>
+                <p>Ahorrá hasta un 20% combinando hotel + aéreo. Opciones All-Inclusive y escapadas.</p>
+            </article>
 
-            <h2 class="mb-4">Descubrí nuestras categorías</h2>
-            <p class="mb-5 text-secondary">Nuestra tecnología escanea miles de opciones para darte la mejor experiencia.
-            </p>
-
-            <div class="row">
-
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="p-4 border rounded-4 shadow-sm h-100">
-                        <img src="./img/Iconos/plane.png" alt="Vuelos" class="mb-3" style="width: 50px;">
-                        <h3 class="h4 fw-bold">Vuelos</h3>
-                        <p class="text-secondary small">Encontrá pasajes con opciones de cambio sin cargo. Comparamos
-                            aerolíneas low-cost y premium.</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="p-4 border rounded-4 shadow-sm h-100">
-                        <img src="./img/Iconos/luggage.png" alt="Paquetes" class="mb-3" style="width: 50px;">
-                        <h3 class="h4 fw-bold">Paquetes</h3>
-                        <p class="text-secondary small">Ahorrá hasta un 20% combinando hotel + aéreo. Opciones
-                            All-Inclusive y escapadas.</p>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 mb-4">
-                    <div class="p-4 border rounded-4 shadow-sm h-100">
-                        <img src="./img/Iconos/passenger.png" alt="Experiencias" class="mb-3" style="width: 50px;">
-                        <h3 class="h4 fw-bold">Experiencias</h3>
-                        <p class="text-secondary small">No seas un turista, sé un viajero. Accedé a guías locales y
-                            trekkings exclusivos.</p>
-                    </div>
-                </div>
-
-            </div>
-        </section>
-
+            <article class="categoria-card">
+                <i class="icon-experiencias"></i>
+                <h3>Experiencias</h3>
+                <p>No seas un turista, sé un viajero. Accedé a guías locales y trekkings exclusivos.</p>
+            </article>
+        </div>
+    </div>
+</section>
 
         <section class="container my-5 py-5">
             <div class="row align-items-center">
@@ -221,18 +193,19 @@
         <h3>@AireViajes</h3>
         <nav class="nav-footer">
             <ul>
-                <li><a href="#">Inicio</a></li>
-                <li><a href="./pages/servicios.html">Servicios</a></li>
-                <li><a href="./pages/ofertas.html">Ofertas</a></li>
-                <li><a href="./pages/acerca-de.html">Acerca De</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pages/servicios.html">Servicios</a></li>
+                <li><a href="pages/ofertas.html">Ofertas</a></li>
+                <li><a href="pages/acerca-de.html">Acerca De</a></li>
+                <li><a href="pages/contacto.html">Contacto</a></li>
             </ul>
-
             <p class="copyright">
-                1717 Harrison St, San Francisco, CA 94103, USA s© 2024 Aire Viajes. Todos los derechos reservados.
+                1717 Harrison St, San Francisco, CA 94103, USA © 2026 Aire Viajes. Todos los derechos reservados.
             </p>
         </nav>
     </footer>
+    </footer>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>

@@ -1,0 +1,30 @@
+/* scss/components/_botones.scss */
+@use '../abstracts/variables';
+
+.btn-aire {
+    padding: 0.75rem 1.5rem;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border-radius: 0.375rem;
+
+    &-negro {
+        background-color: #000;
+        color: #fff;
+        border: 1px solid #000;
+        &:hover {
+            background-color: #333;
+        }
+    }
+
+    &-blanco {
+        background-color: #fff;
+        color: #000;
+        border: 1px solid #dee2e6;
+        &:hover {
+            background-color: #f8f9fa;
+        }
+    }
+}

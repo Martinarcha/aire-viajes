@@ -1,0 +1,55 @@
+@use '../abstracts/variables';
+
+footer {
+    background-color: variables.$color-primario;
+    color: variables.$color-secundario;
+    padding: 60px 20px;
+    text-align: center;
+
+    h3 {
+        font-size: 1.8rem;
+        margin: 0 0 30px 0; // Solo margen inferior para separar del nav
+        font-family: variables.$fuente-principal;
+    }
+
+    .nav-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        ul {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; // Para que no se rompa en pantallas muy chicas
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            li {
+                a {
+                    color: #aaaaaa; // Gris suave para el estado inicial
+                    text-decoration: none;
+                    font-weight: 500;
+                    transition: all 0.3s ease; // El efecto hover suave que pediste
+
+                    &:hover {
+                        color: variables.$color-secundario; // Blanco al pasar el mouse
+                        text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); // Brillo sutil
+                    }
+                }
+            }
+        }
+
+        .copyright {
+            font-size: 0.8rem;
+            color: variables.$color-texto-suave;
+            max-width: 500px;
+            margin: 0 auto;
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            line-height: 1.5;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+@use '../abstracts/variables';
+
+.categorias-aire {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: variables.$color-fondo;
+
+    h2 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 10px;
+        color: variables.$color-primario;
+    }
+
+    .subtitle {
+        color: variables.$color-texto-suave;
+        margin-bottom: 50px;
+        font-size: 1.1rem;
+    }
+}
+
+.categorias-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.categoria-card {
+    background-color: variables.$color-secundario;
+    padding: 40px 30px;
+    border-radius: 20px;
+    border: 1px solid #eee;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    img {
+        width: 50px;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+        margin-bottom: 15px;
+        font-weight: 600;
+        color: variables.$color-primario;
+    }
+
+    p {
+        font-size: 0.95rem;
+        color: variables.$color-texto-suave;
+        line-height: 1.6;
+        margin: 0;
+    }
+
+    &:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+        border-color: variables.$color-primario;
+    }
+}
+
+@media (max-width: 768px) {
+    .categorias-aire {
+        padding: 50px 20px;
+        
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .categorias-grid {
+        grid-template-columns: 1fr;
+    }
+}

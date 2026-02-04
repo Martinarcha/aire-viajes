@@ -1,0 +1,67 @@
+@use '../abstracts/variables';
+@use '../abstracts/mixins';
+
+.acerca-header {
+    background-color: variables.$color-fondo;
+    padding: 80px 20px;
+    text-align: center;
+
+    h1 {
+        font-size: 5rem;
+        font-weight: 800;
+        color: variables.$color-primario;
+        margin-bottom: 15px;
+
+        @include mixins.dispositivos(tablet) {
+            font-size: 3rem;
+        }
+    }
+
+    p {
+        font-size: 1.2rem;
+        color: variables.$color-texto-suave;
+    }
+}
+
+.accordion-aire {
+    max-width: 800px;
+    margin: 50px auto;
+
+    .accordion-item {
+        border: none;
+        margin-bottom: 15px;
+        border-radius: 15px !important;
+        overflow: hidden;
+        @include mixins.sombra-suave;
+    }
+
+    .accordion-button {
+        padding: 25px;
+        font-size: 1.1rem;
+        color: variables.$color-primario;
+        background-color: variables.$color-secundario;
+        @include mixins.transicion;
+
+        &:not(.collapsed) {
+            background-color: variables.$color-primario;
+            color: variables.$color-secundario;
+            box-shadow: none;
+            
+            &::after {
+                filter: brightness(0) invert(1);
+            }
+        }
+
+        &:focus {
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+    }
+
+    .accordion-body {
+        padding: 30px;
+        line-height: 1.8;
+        color: variables.$color-texto-suave;
+        background-color: variables.$color-fondo;
+    }
+}
