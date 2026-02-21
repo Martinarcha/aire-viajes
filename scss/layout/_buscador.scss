@@ -32,7 +32,7 @@
         label {
             font-size: 0.8rem;
             font-weight: 700;
-            color: variables.$color-primario; // Corregido el acceso a la variable
+            color: variables.$color-primario;
             margin-bottom: 5px;
             text-transform: uppercase;
         }
@@ -44,27 +44,18 @@
             font-weight: 500;
             width: 100%;
             background: transparent;
-        }
-    }
+            border-radius: 4px;
+            transition: background-color 0.2s;
 
-    .btn-aire-buscar {
-        background-color: variables.$color-primario;
-        color: variables.$color-secundario;
-        border: none;
-        padding: 15px 40px;
-        border-radius: 50px;
-        font-weight: 600;
-        cursor: pointer;
-        transition: transform 0.3s ease;
-
-        &:hover {
-            transform: scale(1.05);
-            background-color: variables.$color-texto; // Un ligero cambio de tono al hover
+            &:focus-visible {
+                background-color: rgba(0, 0, 0, 0.05);
+                outline: 2px solid variables.$color-primario;
+                outline-offset: 4px;
+            }
         }
     }
 }
 
-// Media Query integrado para Responsividad
 @media (max-width: 768px) {
     .form-aire {
         flex-direction: column;
@@ -75,14 +66,18 @@
             border-right: none;
             border-bottom: 1px solid #eee;
             width: 100%;
-            padding: 10px 0;
+            padding: 15px 0;
 
             &:last-of-type {
                 border-bottom: none;
             }
+
+            input:focus-visible {
+                outline-offset: 2px;
+            }
         }
         
-        .btn-aire-buscar {
+        .btn-aire {
             width: 100%;
         }
     }

@@ -1,0 +1,52 @@
+@use '../abstracts/variables';
+
+.titulo-con-barra {
+    position: relative;
+    padding-bottom: 15px;
+
+    &::after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 60px;
+        height: 4px;
+        background-color: #000;
+    }
+}
+
+.list-unstyled {
+    li {
+        font-size: 1.05rem;
+        color: #444;
+        
+        span {
+            font-weight: 500;
+        }
+    }
+}
+
+.rounded-4 {
+    border-radius: 1.5rem !important;
+}
+
+.shadow {
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1) !important;
+}
+
+@media (max-width: 768px) {
+    .titulo-con-barra {
+        text-align: center;
+        
+        &::after {
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+
+    .list-unstyled {
+        li {
+            justify-content: center;
+        }
+    }
+}

@@ -7,7 +7,6 @@
     <title>Aire Viajes</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -22,22 +21,16 @@
                 </button>
                 <div class="collapse navbar-collapse" id="menuNavegacion">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3 text-center">
-                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="index.html">Inicio</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark fw-medium"
-                                href="pages/servicios.html">Servicios</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark fw-medium"
-                                href="pages/ofertas.html">Ofertas</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="pages/acerca-de.html">Acerca
-                                De</a></li>
-                        <li class="nav-item"><a class="nav-link text-dark fw-medium"
-                                href="pages/contacto.html">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link active text-dark fw-medium" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="pages/servicios.html">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="pages/ofertas.html">Ofertas</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="pages/acerca-de.html">Acerca De</a></li>
+                        <li class="nav-item"><a class="nav-link text-dark fw-medium" href="pages/contacto.html">Contacto</a></li>
                     </ul>
                 </div>
             </div>
         </nav>
     </header>
-
-
 
     <main>
 
@@ -45,16 +38,12 @@
             <div class="container hero-container">
                 <div class="hero-text">
                     <h1>Tu espacio de experiencias únicas</h1>
-                    <p>Diseñamos viajes a medida priorizando tu comodidad. Desde vuelos ejecutivos hasta excursiones
-                        locales, gestionamos tu mundo desde tu dispositivo.</p>
-
+                    <p>Diseñamos viajes a medida priorizando tu comodidad. Desde vuelos ejecutivos hasta excursiones locales, gestionamos tu mundo desde tu dispositivo.</p>
                     <div class="hero-buttons">
                         <a href="#" class="btn-aire btn-aire-negro">COMENCEMOS</a>
                         <a href="#" class="btn-aire btn-aire-blanco">SABER MÁS</a>
                     </div>
                 </div>
-
-
 
                 <div class="hero-visual">
                     <div id="carruselViajes" class="carousel slide carousel-dark" data-bs-ride="carousel">
@@ -63,19 +52,17 @@
                                 <img src="./img/avion-hero-index.jpg" class="d-block w-100" alt="Avión viajando">
                             </div>
                             <div class="carousel-item">
-                                <img src="./img/globos-hero-index.jpg" class="d-block w-100" alt="Otra foto de viaje">
+                                <img src="./img/globos-hero-index.jpg" class="d-block w-100" alt="Viaje en globos">
                             </div>
                             <div class="carousel-item">
-                                <img src="./img/lago-hero-index.jpg" class="d-block w-100" alt="Tercera foto">
+                                <img src="./img/lago-hero-index.jpg" class="d-block w-100" alt="Paisaje con lago">
                             </div>
                         </div>
-                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselViajes"
-                            data-bs-slide="prev">
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carruselViajes" data-bs-slide="prev">
                             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Anterior</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carruselViajes"
-                            data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carruselViajes" data-bs-slide="next">
                             <span class="carousel-control-next-icon" aria-hidden="true"></span>
                             <span class="visually-hidden">Siguiente</span>
                         </button>
@@ -84,69 +71,55 @@
             </div>
         </section>
 
-
         <section class="seccion-buscador-aire">
-
             <form class="form-aire">
-
                 <div class="input-aire-group">
                     <label>ORIGEN</label>
-                    <input type="text" placeholder="Buenos Aires">
+                    <input type="text" class="input-aire" placeholder="Buenos Aires">
                 </div>
-
                 <div class="input-aire-group">
                     <label>DESTINO</label>
-                    <input type="text" placeholder="¿A dónde vas?">
+                    <input type="text" class="input-aire" placeholder="¿A dónde vas?">
                 </div>
-
                 <div class="input-aire-group">
                     <label>FECHA</label>
-                    <input type="date">
+                    <input type="date" class="input-aire">
                 </div>
-
-                <button type="submit" class="btn-aire-buscar">BUSCAR</button>
-
+                <button type="submit" class="btn-aire btn-aire-negro">BUSCAR</button>
             </form>
-
         </section>
 
-<section class="categorias-aire">
-    <div class="container">
-        <h2>Descubrí nuestras categorías</h2>
-        <p class="subtitle">Nuestra tecnología escanea miles de opciones para darte la mejor experiencia.</p>
-        
-        <div class="categorias-grid">
-            <article class="categoria-card">
-                <i class="icon-vuelos"></i>
-                <h3>Vuelos</h3>
-                <p>Encontrá pasajes con opciones de cambio sin cargo. Comparamos aerolíneas low-cost y premium.</p>
-            </article>
-
-            <article class="categoria-card">
-                <i class="icon-paquetes"></i>
-                <h3>Paquetes</h3>
-                <p>Ahorrá hasta un 20% combinando hotel + aéreo. Opciones All-Inclusive y escapadas.</p>
-            </article>
-
-            <article class="categoria-card">
-                <i class="icon-experiencias"></i>
-                <h3>Experiencias</h3>
-                <p>No seas un turista, sé un viajero. Accedé a guías locales y trekkings exclusivos.</p>
-            </article>
-        </div>
-    </div>
-</section>
+        <section class="categorias-aire">
+            <div class="container">
+                <h2>Descubrí nuestras categorías</h2>
+                <p class="subtitle">Nuestra tecnología escanea miles de opciones para darte la mejor experiencia.</p>
+                <div class="categorias-grid">
+                    <article class="categoria-card">
+                        <i class="icon-vuelos"></i>
+                        <h3>Vuelos</h3>
+                        <p>Encontrá pasajes con opciones de cambio sin cargo. Comparamos aerolíneas low-cost y premium.</p>
+                    </article>
+                    <article class="categoria-card">
+                        <i class="icon-paquetes"></i>
+                        <h3>Paquetes</h3>
+                        <p>Ahorrá hasta un 20% combinando hotel + aéreo. Opciones All-Inclusive y escapadas.</p>
+                    </article>
+                    <article class="categoria-card">
+                        <i class="icon-experiencias"></i>
+                        <h3>Experiencias</h3>
+                        <p>No seas un turista, sé un viajero. Accedé a guías locales y trekkings exclusivos.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
 
         <section class="container my-5 py-5">
             <div class="row align-items-center">
-
                 <div class="col-12 col-md-6 order-2 order-md-1">
                     <h2 class="display-6 fw-bold mb-3 titulo-con-barra">Conocé a tu agente personal</h2>
                     <p class="lead text-secondary mb-4">
-                        En <strong>Aire Viajes</strong> combinamos la rapidez de la inteligencia artificial para buscar
-                        precios, con la calidez de expertos humanos.
+                        En <strong>Aire Viajes</strong> combinamos la rapidez de la inteligencia artificial para buscar precios, con la calidez de expertos humanos.
                     </p>
-
                     <ul class="list-unstyled">
                         <li class="mb-2 d-flex align-items-center gap-2">
                             ✅ <span>Asistencia prioritaria en aeropuertos</span>
@@ -159,20 +132,16 @@
                         </li>
                     </ul>
                 </div>
-
                 <div class="col-12 col-md-6 order-1 order-md-2 mb-4 mb-md-0">
                     <img src="./img/agente-ia.jpg" alt="Planificando viaje" class="img-fluid rounded-4 shadow">
                 </div>
             </div>
         </section>
 
-
         <section class="bg-body-secondary py-5 text-center">
             <div class="container">
-
                 <h2 class="fw-bold mb-3">El próximo destino en tu bolsillo</h2>
                 <p class="text-muted mb-4 fs-5">Descargá la app móvil gratis acá. Gestioná tus reservas offline.</p>
-
                 <div class="d-flex justify-content-center gap-3">
                     <a href="#" class="transition-hover">
                         <img src="./img/Iconos/playstore.png" alt="Google Play" style="height: 50px;">
@@ -181,11 +150,8 @@
                         <img src="./img/Iconos/appstore.png" alt="App Store" style="height: 50px;">
                     </a>
                 </div>
-
             </div>
         </section>
-
-
 
     </main>
 
@@ -204,13 +170,10 @@
             </p>
         </nav>
     </footer>
-    </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
 
-
 </body>
-
 </html>

@@ -8,7 +8,7 @@ footer {
 
     h3 {
         font-size: 1.8rem;
-        margin: 0 0 30px 0; // Solo margen inferior para separar del nav
+        margin-bottom: 30px;
         font-family: variables.$fuente-principal;
     }
 
@@ -21,7 +21,7 @@ footer {
         ul {
             display: flex;
             justify-content: center;
-            flex-wrap: wrap; // Para que no se rompa en pantallas muy chicas
+            flex-wrap: wrap;
             gap: 20px;
             padding: 0;
             margin: 0;
@@ -29,14 +29,20 @@ footer {
 
             li {
                 a {
-                    color: #aaaaaa; // Gris suave para el estado inicial
+                    color: #aaaaaa;
                     text-decoration: none;
                     font-weight: 500;
-                    transition: all 0.3s ease; // El efecto hover suave que pediste
+                    transition: all 0.3s ease;
+                    border-radius: 4px;
 
                     &:hover {
-                        color: variables.$color-secundario; // Blanco al pasar el mouse
-                        text-shadow: 0 0 5px rgba(255, 255, 255, 0.3); // Brillo sutil
+                        color: variables.$color-secundario;
+                        text-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+                    }
+
+                    &:focus-visible {
+                        outline: 2px solid variables.$color-secundario;
+                        outline-offset: 4px;
                     }
                 }
             }
