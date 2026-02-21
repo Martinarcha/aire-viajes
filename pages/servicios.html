@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-            <div class="container-fluid px-5">
+            <div class="container-fluid px-lg-5">
                 <a class="navbar-brand fw-bold fs-3" href="../index.html">@AireViajes</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
                     <span class="navbar-toggler-icon"></span>
@@ -32,53 +32,71 @@
     </header>
 
     <main>
-        <section class="servicios-intro">
+        <section class="servicios-intro container py-5 text-center">
             <h1>Diseñamos experiencias, no solo viajes</h1>
-            <p>Nuestra plataforma conecta tecnología de búsqueda avanzada con servicios de concierge personal. Todo lo que necesitás, desde el despegue hasta el regreso.</p>
+            <p class="lead text-secondary mx-auto" style="max-width: 800px;">
+                Nuestra plataforma conecta tecnología de búsqueda avanzada con servicios de concierge personal. Todo lo que necesitás, desde el despegue hasta el regreso.
+            </p>
         </section>
 
-        <section class="servicios-grid-container">
-            <article class="servicio-card">
-                <div class="card-imagen">
-                    <img src="../img/gestion-vuelos.jpg" alt="Persona gestionando vuelos desde una tablet">
-                </div>
-                <div class="card-contenido">
-                    <h3>Gestión Aérea Inteligente</h3>
-                    <p>Nuestro algoritmo busca la mejor ruta analizando escalas y tiempos.</p>
-                    <ul>
-                        <li>Alertas de precio en tiempo real.</li>
-                        <li>Check-in automático.</li>
-                        <li>Reubicación prioritaria.</li>
-                    </ul>
-                    <a href="#" class="btn-aire btn-aire-negro">Detalles</a>
-                </div>
-            </article>
+        <section class="servicios-grid-container container pb-5">
+            <div class="row g-4 justify-content-center">
+                
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="servicio-card h-100 shadow-sm rounded-4 overflow-hidden border">
+                        <div class="card-imagen">
+                            <img src="../img/gestion-vuelos.jpg" class="img-fluid w-100" alt="Persona gestionando vuelos desde una tablet" style="height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="card-contenido p-4">
+                            <h3 class="h4 fw-bold">Gestión Aérea Inteligente</h3>
+                            <p class="text-muted">Nuestro algoritmo busca la mejor ruta analizando escalas y tiempos.</p>
+                            <ul class="ps-3 mb-4">
+                                <li>Alertas de precio en tiempo real.</li>
+                                <li>Check-in automático.</li>
+                                <li>Reubicación prioritaria.</li>
+                            </ul>
+                            <a href="#" class="btn-aire btn-aire-negro w-100 text-center">Detalles</a>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="servicio-card">
-                <div class="card-imagen">
-                    <img src="../img/curaduria-hoteles.jpg" alt="Interior de hotel de lujo">
-                </div>
-                <div class="card-contenido">
-                    <h3>Curaduría de Hoteles</h3>
-                    <p>Solo ofrecemos alojamientos verificados con estándares de diseño.</p>
-                    <ul>
-                        <li>Upgrades gratuitos.</li>
-                        <li>Desayuno y Late Check-out.</li>
-                    </ul>
-                    <a href="#" class="btn-aire btn-aire-negro">Ver Hoteles</a>
-                </div>
-            </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="servicio-card h-100 shadow-sm rounded-4 overflow-hidden border">
+                        <div class="card-imagen">
+                            <img src="../img/curaduria-hoteles.jpg" class="img-fluid w-100" alt="Interior de hotel de lujo" style="height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="card-contenido p-4">
+                            <h3 class="h4 fw-bold">Curaduría de Hoteles</h3>
+                            <p class="text-muted">Solo ofrecemos alojamientos verificados con estándares de diseño.</p>
+                            <ul class="ps-3 mb-4">
+                                <li>Upgrades gratuitos.</li>
+                                <li>Desayuno y Late Check-out.</li>
+                                <li>Ubicaciones premium garantizadas.</li>
+                            </ul>
+                            <a href="#" class="btn-aire btn-aire-negro w-100 text-center">Ver Hoteles</a>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="servicio-card">
-                <div class="card-imagen">
-                    <img src="../img/excursiones.jpg" alt="Grupo de personas realizando una excursión">
-                </div>
-                <div class="card-contenido">
-                    <h3>Actividades Locales</h3>
-                    <p>Accedé a experiencias que no salen en las guías turísticas. Tours privados y reservas exclusivas.</p>
-                    <a href="#" class="btn-aire btn-aire-negro">Explorar</a>
-                </div>
-            </article>
+                <article class="col-12 col-md-6 col-lg-4">
+                    <div class="servicio-card h-100 shadow-sm rounded-4 overflow-hidden border">
+                        <div class="card-imagen">
+                            <img src="../img/excursiones.jpg" class="img-fluid w-100" alt="Grupo de personas realizando una excursión" style="height: 200px; object-fit: cover;">
+                        </div>
+                        <div class="card-contenido p-4">
+                            <h3 class="h4 fw-bold">Actividades Locales</h3>
+                            <p class="text-muted">Accedé a experiencias que no salen en las guías turísticas. Tours privados y reservas exclusivas.</p>
+                            <ul class="ps-3 mb-4">
+                                <li>Guías locales bilingües.</li>
+                                <li>Acceso sin filas a museos.</li>
+                                <li>Trekkings de baja dificultad.</li>
+                            </ul>
+                            <a href="#" class="btn-aire btn-aire-negro w-100 text-center">Explorar</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
         </section>
     </main>
 

@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-            <div class="container-fluid px-5">
+            <div class="container-fluid px-lg-5">
                 <a class="navbar-brand fw-bold fs-3" href="../index.html">@AireViajes</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
                     <span class="navbar-toggler-icon"></span>
@@ -32,22 +32,22 @@
     </header>
 
     <main>
-        <section class="container my-5">
+        <section class="container my-5 py-3">
             <div class="text-center mb-5">
-                <h1 class="display-4 fw-bold">Sobre Nosotros</h1>
-                <p class="lead text-secondary">Nuestra historia y compromiso con vos.</p>
+                <h1>Sobre Nosotros</h1>
+                <p class="lead text-secondary mx-auto" style="max-width: 600px;">Nuestra historia y compromiso con vos.</p>
             </div>
 
-            <div class="accordion accordion-aire max-width-accordion mx-auto" id="accordionAireViajes">
+            <div class="accordion accordion-aire mx-auto shadow-sm" id="accordionAireViajes" style="max-width: 800px;">
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button fw-bold py-3" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panel1" aria-expanded="true" aria-controls="panel1">
                             ¿Quiénes somos?
                         </button>
                     </h2>
                     <div id="panel1" class="accordion-collapse collapse show" data-bs-parent="#accordionAireViajes">
-                        <div class="accordion-body">
+                        <div class="accordion-body text-muted">
                             Somos una agencia digital nacida en Buenos Aires con una misión simple: <strong>democratizar el lujo</strong>. Nuestro equipo combina expertos en turismo con tecnología de punta para ofrecerte las mejores tarifas.
                         </div>
                     </div>
@@ -55,13 +55,13 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panel2" aria-expanded="false" aria-controls="panel2">
                             Nuestra Misión
                         </button>
                     </h2>
                     <div id="panel2" class="accordion-collapse collapse" data-bs-parent="#accordionAireViajes">
-                        <div class="accordion-body">
+                        <div class="accordion-body text-muted">
                             Queremos que viajar deje de ser un trámite estresante. Nos encargamos de la burocracia, los seguros y las escalas para que vos solo te ocupes de disfrutar el destino.
                         </div>
                     </div>
@@ -69,13 +69,13 @@
 
                 <div class="accordion-item">
                     <h2 class="accordion-header">
-                        <button class="accordion-button collapsed fw-bold" type="button" data-bs-toggle="collapse"
+                        <button class="accordion-button collapsed fw-bold py-3" type="button" data-bs-toggle="collapse"
                             data-bs-target="#panel3" aria-expanded="false" aria-controls="panel3">
                             Políticas de Sustentabilidad
                         </button>
                     </h2>
                     <div id="panel3" class="accordion-collapse collapse" data-bs-parent="#accordionAireViajes">
-                        <div class="accordion-body">
+                        <div class="accordion-body text-muted">
                             Compensamos la huella de carbono de todos nuestros vuelos corporativos y trabajamos solo con hoteles que respetan el medio ambiente local.
                         </div>
                     </div>
@@ -84,17 +84,17 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="text-center">
         <h3>@AireViajes</h3>
         <nav class="nav-footer">
-            <ul>
+            <ul class="list-unstyled d-flex justify-content-center gap-3">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="ofertas.html">Ofertas</a></li>
                 <li><a href="acerca-de.html">Acerca De</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            <p class="copyright">
+            <p class="copyright text-muted mt-3 px-3">
                 1717 Harrison St, San Francisco, CA 94103, USA © 2026 Aire Viajes. Todos los derechos reservados.
             </p>
         </nav>

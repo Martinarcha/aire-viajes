@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-            <div class="container-fluid px-5">
+            <div class="container-fluid px-lg-5">
                 <a class="navbar-brand fw-bold fs-3" href="../index.html">@AireViajes</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
                     <span class="navbar-toggler-icon"></span>
@@ -32,77 +32,91 @@
     </header>
 
     <main>
-        <section class="ofertas-hero">
-            <h1>Oportunidades Exclusivas</h1>
-            <p>Seleccionamos destinos con tarifas preferenciales para nuestra comunidad.</p>
+        <section class="ofertas-hero container py-5 text-center">
+            <h1">Oportunidades Exclusivas</h1>
+            <p class="lead text-secondary mx-auto" style="max-width: 700px;">
+                Seleccionamos destinos con tarifas preferenciales para nuestra comunidad.
+            </p>
         </section>
 
-        <section class="ofertas-grid">
-            <article class="oferta-card">
-                <div class="badge-oferta">20% OFF</div>
-                <div class="oferta-imagen">
-                    <img src="../img/ofertas/bariloche-ofertas.jpg" alt="Montañas nevadas en Bariloche, Patagonia Argentina">
-                </div>
-                <div class="oferta-info">
-                    <span class="destino">Argentina</span>
-                    <h3>Patagonia Extrema</h3>
-                    <p class="precio">Desde $1.200</p>
-                    <a href="#" class="btn-aire btn-aire-negro">Reservar</a>
-                </div>
-            </article>
+        <section class="ofertas-grid container pb-5">
+            <div class="row g-4 justify-content-center">
+                
+                <article class="col-12 col-md-6 col-lg-3">
+                    <div class="oferta-card h-100 shadow-sm rounded-4 overflow-hidden position-relative border">
+                        <div class="badge-oferta position-absolute top-0 start-0 m-3 badge bg-dark text-white p-2">20% OFF</div>
+                        <div class="oferta-imagen">
+                            <img src="../img/ofertas/bariloche-ofertas.jpg" class="img-fluid w-100" alt="Bariloche" style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="oferta-info p-3">
+                            <span class="text-uppercase text-muted small fw-bold">Argentina</span>
+                            <h3 class="h5 fw-bold mt-1">Patagonia Extrema</h3>
+                            <p class="precio fw-bold text-primary fs-5 mb-3">Desde $1.200</p>
+                            <a href="#" class="btn-aire btn-aire-negro w-100 text-center">Reservar</a>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="oferta-card">
-                <div class="badge-oferta">Last Minute</div>
-                <div class="oferta-imagen">
-                    <img src="../img/ofertas/rio-de-janeiro-ofertas.jpg" alt="Vista del Cristo Redentor en Rio de Janeiro">
-                </div>
-                <div class="oferta-info">
-                    <span class="destino">Brasil</span>
-                    <h3>Rio de Janeiro</h3>
-                    <p class="precio">Desde $850</p>
-                    <a href="#" class="btn-aire btn-aire-negro">Reservar</a>
-                </div>
-            </article>
+                <article class="col-12 col-md-6 col-lg-3">
+                    <div class="oferta-card h-100 shadow-sm rounded-4 overflow-hidden position-relative border">
+                        <div class="badge-oferta position-absolute top-0 start-0 m-3 badge bg-danger text-white p-2">Last Minute</div>
+                        <div class="oferta-imagen">
+                            <img src="../img/ofertas/rio-de-janeiro-ofertas.jpg" class="img-fluid w-100" alt="Rio de Janeiro" style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="oferta-info p-3">
+                            <span class="text-uppercase text-muted small fw-bold">Brasil</span>
+                            <h3 class="h5 fw-bold mt-1">Rio de Janeiro</h3>
+                            <p class="precio fw-bold text-primary fs-5 mb-3">Desde $850</p>
+                            <a href="#" class="btn-aire btn-aire-negro w-100 text-center">Reservar</a>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="oferta-card">
-                <div class="badge-oferta">All Inclusive</div>
-                <div class="oferta-imagen">
-                    <img src="../img/ofertas/cancun-ofertas.jpg" alt="Playas de arena blanca y mar turquesa en Cancún">
-                </div>
-                <div class="oferta-info">
-                    <span class="destino">México</span>
-                    <h3>Cancún Relax</h3>
-                    <p class="precio">Desde $1.500</p>
-                    <a href="#" class="btn-aire btn-aire-negro">Reservar</a>
-                </div>
-            </article>
+                <article class="col-12 col-md-6 col-lg-3">
+                    <div class="oferta-card h-100 shadow-sm rounded-4 overflow-hidden position-relative border">
+                        <div class="badge-oferta position-absolute top-0 start-0 m-3 badge bg-success text-white p-2">All Inclusive</div>
+                        <div class="oferta-imagen">
+                            <img src="../img/ofertas/cancun-ofertas.jpg" class="img-fluid w-100" alt="Cancún" style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="oferta-info p-3">
+                            <span class="text-uppercase text-muted small fw-bold">México</span>
+                            <h3 class="h5 fw-bold mt-1">Cancún Relax</h3>
+                            <p class="precio fw-bold text-primary fs-5 mb-3">Desde $1.500</p>
+                            <a href="#" class="btn-aire btn-aire-negro w-100 text-center">Reservar</a>
+                        </div>
+                    </div>
+                </article>
 
-            <article class="oferta-card">
-                <div class="badge-oferta">Special Deal</div>
-                <div class="oferta-imagen">
-                    <img src="../img/ofertas/miami-ofertas.jpg" alt="Skyline y playa de Miami Beach">
-                </div>
-                <div class="oferta-info">
-                    <span class="destino">Estados Unidos</span>
-                    <h3>Miami Luxury</h3>
-                    <p class="precio">Desde $1.100</p>
-                    <a href="#" class="btn-aire btn-aire-negro">Reservar</a>
-                </div>
-            </article>
+                <article class="col-12 col-md-6 col-lg-3">
+                    <div class="oferta-card h-100 shadow-sm rounded-4 overflow-hidden position-relative border">
+                        <div class="badge-oferta position-absolute top-0 start-0 m-3 badge bg-info text-dark p-2">Special Deal</div>
+                        <div class="oferta-imagen">
+                            <img src="../img/ofertas/miami-ofertas.jpg" class="img-fluid w-100" alt="Miami" style="height: 250px; object-fit: cover;">
+                        </div>
+                        <div class="oferta-info p-3">
+                            <span class="text-uppercase text-muted small fw-bold">Estados Unidos</span>
+                            <h3 class="h5 fw-bold mt-1">Miami Luxury</h3>
+                            <p class="precio fw-bold text-primary fs-5 mb-3">Desde $1.100</p>
+                            <a href="#" class="btn-aire btn-aire-negro w-100 text-center">Reservar</a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
         </section>
     </main>
 
-    <footer>
+    <footer class="text-center">
         <h3>@AireViajes</h3>
         <nav class="nav-footer">
-            <ul>
+            <ul class="list-unstyled d-flex justify-content-center gap-3">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="ofertas.html">Ofertas</a></li>
                 <li><a href="acerca-de.html">Acerca De</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            <p class="copyright">
+            <p class="copyright text-muted mt-3">
                 1717 Harrison St, San Francisco, CA 94103, USA © 2026 Aire Viajes. Todos los derechos reservados.
             </p>
         </nav>

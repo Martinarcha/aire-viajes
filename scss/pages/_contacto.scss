@@ -2,72 +2,48 @@
 @use '../abstracts/mixins';
 
 .contacto-page {
-    background-color: variables.$color-fondo;
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    padding: 60px 0;
-
-    h1 {
-        color: variables.$color-primario;
-        letter-spacing: -1px;
+    section {
+        .row {
+            @include mixins.dispositivos(mobile) {
+                text-align: center;
+                justify-content: center;
+            }
+        }
     }
 
-    .lead {
-        color: variables.$color-texto-suave;
-        font-size: 1.1rem;
-    }
+    .info-contacto-list {
+        list-style: none;
+        padding: 0;
+        display: inline-block;
+        text-align: left;
 
-    ul.list-unstyled {
+        @include mixins.dispositivos(mobile) {
+            margin: 0 auto;
+            display: table;
+        }
+
         li {
-            padding: 10px 0;
-            border-bottom: 1px solid rgba(0,0,0,0.05);
-            color: variables.$color-texto-suave;
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
             
             strong {
+                display: block;
                 color: variables.$color-primario;
-                margin-right: 10px;
+                margin-bottom: 0.2rem;
             }
         }
     }
 
     form {
-        border-radius: 20px !important;
-        padding: 40px !important;
-        @include mixins.sombra-suave;
+        max-width: 500px;
+        margin: 0 auto;
         
-        .form-label {
-            font-size: 0.9rem;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            color: #555;
-        }
-
-        .form-control {
-            border: 1px solid #eee;
-            padding: 12px 15px;
-            border-radius: 10px;
-            background-color: #fdfdfd;
-            @include mixins.transicion;
-
-            &:focus {
-                border-color: variables.$color-primario;
-                box-shadow: 0 0 0 0.25rem rgba(variables.$color-primario, 0.1);
-            }
-        }
-
-        button {
-            margin-top: 20px;
-            @include mixins.hover-levante(-3px);
-        }
-    }
-
-    @include mixins.dispositivos(tablet) {
-        padding: 40px 20px;
-        text-align: center;
-        
-        ul.list-unstyled li {
-            border-bottom: none;
+        .input-aire {
+            width: 100%;
+            padding: 0.8rem;
+            border: 1px solid #ced4da;
+            border-radius: 8px;
+            margin-bottom: 1rem;
         }
     }
 }

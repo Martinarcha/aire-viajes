@@ -13,7 +13,7 @@
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-white border-bottom sticky-top">
-            <div class="container-fluid px-5">
+            <div class="container-fluid px-lg-5">
                 <a class="navbar-brand fw-bold fs-3" href="../index.html">@AireViajes</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion">
                     <span class="navbar-toggler-icon"></span>
@@ -34,36 +34,38 @@
     <main>
         <div class="contacto-page">
             <section class="container my-5">
-                <div class="row align-items-center">
-                    <div class="col-12 col-md-6 mb-4">
-                        <h1 class="display-5 fw-bold mb-3">Estamos conectados</h1>
-                        <p class="lead mb-4">¿Tenés dudas sobre tu próximo viaje? Dejanos tu mensaje y un agente te contactará en menos de 24hs.</p>
+                <div class="row align-items-center text-center text-md-start">
+                    <div class="col-12 col-md-6 mb-5 mb-md-0">
+                        <h1>Estamos conectados</h1>
+                        <p class="lead mb-4 mx-auto mx-md-0" style="max-width: 500px;">
+                            ¿Tenés dudas sobre tu próximo viaje? Dejanos tu mensaje y un agente te contactará en menos de 24hs.
+                        </p>
 
-                        <ul class="list-unstyled">
-                            <li class="mb-2"><strong>📍 Dirección:</strong> Av. del Libertador 1200, Buenos Aires</li>
-                            <li class="mb-2"><strong>📞 Teléfono:</strong> 0800-555-AIRE</li>
-                            <li class="mb-2"><strong>📧 Email:</strong> hola@aireviajes.com</li>
+                        <ul class="list-unstyled d-inline-block text-start">
+                            <li class="mb-3"><strong>📍 Dirección:</strong> Av. del Libertador 1200, BSAS</li>
+                            <li class="mb-3"><strong>📞 Teléfono:</strong> 0800-555-AIRE</li>
+                            <li class="mb-3"><strong>📧 Email:</strong> hola@aireviajes.com</li>
                         </ul>
                     </div>
 
                     <div class="col-12 col-md-6">
-                        <form class="p-4 border rounded shadow-sm bg-white">
-                            <div class="mb-3">
+                        <form class="p-4 border rounded-4 shadow-sm bg-white mx-auto" style="max-width: 500px;">
+                            <div class="mb-3 text-start">
                                 <label for="nombre" class="form-label fw-bold">Nombre Completo</label>
                                 <input type="text" class="input-aire" id="nombre" placeholder="Ej: Juan Pérez">
                             </div>
                             
-                            <div class="mb-3">
+                            <div class="mb-3 text-start">
                                 <label for="email" class="form-label fw-bold">Email</label>
                                 <input type="email" class="input-aire" id="email" placeholder="nombre@email.com">
                             </div>
 
-                            <div class="mb-3">
+                            <div class="mb-4 text-start">
                                 <label for="mensaje" class="form-label fw-bold">Mensaje</label>
                                 <textarea class="input-aire" id="mensaje" rows="4" placeholder="Escribí tu consulta..."></textarea>
                             </div>
                             
-                            <button type="submit" class="btn-aire btn-aire-negro w-100 py-2">ENVIAR MENSAJE</button>
+                            <button type="submit" class="btn-aire btn-aire-negro w-100 py-3 fw-bold">ENVIAR MENSAJE</button>
                         </form>
                     </div>
                 </div>
@@ -71,18 +73,18 @@
         </div>
     </main>
 
-    <footer>
+    <footer class="text-center">
         <h3>@AireViajes</h3>
         <nav class="nav-footer">
-            <ul>
+            <ul class="list-unstyled d-flex justify-content-center gap-3">
                 <li><a href="../index.html">Inicio</a></li>
                 <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="ofertas.html">Ofertas</a></li>
                 <li><a href="acerca-de.html">Acerca De</a></li>
                 <li><a href="contacto.html">Contacto</a></li>
             </ul>
-            <p class="copyright">
-                1717 Harrison St, San Francisco, CA 94103, USA © 2026 Aire Viajes. Todos los derechos reservados.
+            <p class="copyright text-muted mt-3 px-3">
+                1717 Harrison St, San Francisco, CA 94103, USA © 2026 Aire Viajes.
             </p>
         </nav>
     </footer>
